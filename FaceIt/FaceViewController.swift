@@ -9,8 +9,18 @@
 import UIKit
 
 class FaceViewController: UIViewController {
-
-
+    
+    @IBOutlet weak var faceView: FaceView!
+ 
+    var expression = FacialExpression(eyes: .Open, eyeBrows: .Normal, mouth: .Smile){
+        didSet{
+            updateUI()
+        }
+    }
+    
+    private func updateUI(){
+        
+    }
 
 
 }
