@@ -29,7 +29,7 @@ struct FacialExpression
         func moreFurrowedBrow() -> EyeBrows {
             return EyeBrows(rawValue: rawValue + 1) ?? .Furrowed
         }
-    }
+    }	
     
     enum Mouth: Int {
         case Frown
