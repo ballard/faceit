@@ -22,6 +22,7 @@
         <!--Blinking Face View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="BlinkingFaceViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -57,7 +58,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="UCq-mK-KNK" appends="YES" id="6gs-wF-ud3"/>
+                                    <outletCollection property="gestureRecognizers" destination="QMh-IX-0yj" appends="YES" id="uj0-ia-sWr"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -74,10 +75,9 @@
                         <outlet property="faceView" destination="lmk-ke-e3B" id="kla-ej-qw4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UCq-mK-KNK">
+                <tapGestureRecognizer id="QMh-IX-0yj">
                     <connections>
-                        <action selector="eyesGestureRecognizer:" destination="BYZ-38-t0r" id="Q1o-ae-qWE"/>
+                        <action selector="headShake:" destination="BYZ-38-t0r" id="1YW-bG-xOG"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
