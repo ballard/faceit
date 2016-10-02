@@ -115,7 +115,6 @@ class FaceView: UIView {
         return path
     }
     
-    
     private func pathForBrow(eye: Eye) -> UIBezierPath
     {
         var tilt = eyeBrowTilt
